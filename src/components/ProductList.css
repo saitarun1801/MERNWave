@@ -1,0 +1,31 @@
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff;
+}
+
+.product-card img {
+  max-width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.heart-btn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+span {
+  text-decoration: underline;
+}

@@ -42,3 +42,9 @@
   font-size: 14px;
   font-family: 'Inter', sans-serif;
 }
+
+@media (max-width: 768px) {
+  .filter-sidebar {
+    display: none;
+  }
+}

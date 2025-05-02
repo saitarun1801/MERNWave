@@ -92,3 +92,27 @@
 }
 
 
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .subscribe-input {
+    flex-direction: column;
+  }
+
+  .subscribe-input input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}

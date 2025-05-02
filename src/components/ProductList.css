@@ -29,3 +29,14 @@
 span {
   text-decoration: underline;
 }
+
+
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    text-align: center;
+  }
+}

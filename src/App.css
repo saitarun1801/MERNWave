@@ -1,10 +1,29 @@
-.app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.main-content {
+  padding: 0 32px;
 }
 
-main {
-  flex: 1;
-  padding: 20px;
+.filter-sort-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.toggle-filter {
+  background: none;
+  border: none;
+  color: #888;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.sort-dropdown {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.page-content {
+  display: flex;
+  gap: 24px;
 }

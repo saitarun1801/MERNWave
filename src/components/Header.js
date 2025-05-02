@@ -1,32 +1,33 @@
 // src/components/Header.js
 import React from 'react';
 import './Header.css';
-import { FaSearch, FaHeart, FaShoppingCart, FaUser, FaGlobe } from 'react-icons/fa';
+import logo from '../logo.svg'; 
 
-function Header() {
+const Header = () => {
   return (
-    <header className="main-header">
-      <div className="header-container">
-        <div className="logo">LOGO</div>
-        
-        <nav className="nav-links">
-          <a href="#">Shop</a>
-          <a href="#">Skills</a>
-          <a href="#">Stories</a>
-          <a href="#">About</a>
-          <a href="#">Contact Us</a>
-        </nav>
-
+    <header className="header">
+      <div className="header-top">
+        <img src={logo} alt="Logo" className="logo" />
+        <div className="header-title">LOGO</div>
         <div className="header-icons">
-          <FaSearch className="icon" />
-          <FaHeart className="icon" />
-          <FaShoppingCart className="icon" />
-          <FaUser className="icon" />
-          <FaGlobe className="icon" />
+          <i className="fas fa-search" />
+          <i className="far fa-heart" />
+          <i className="fas fa-shopping-bag" />
+          <i className="fas fa-user" />
+          <span className="lang-select">ENG ▼</span>
         </div>
       </div>
+      <nav className="nav-menu">
+        <ul>
+          <li>SHOP</li>
+          <li>SKILLS</li>
+          <li>STORIES</li>
+          <li>ABOUT</li>
+          <li>CONTACT US</li>
+        </ul>
+      </nav>
     </header>
   );
-}
+};
 
 export default Header;

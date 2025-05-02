@@ -1,44 +1,47 @@
 /* src/components/Header.css */
-.main-header {
+.header {
   background-color: white;
-  border-bottom: 1px solid #eee;
-  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
 }
 
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
+.header-top {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .logo {
+  height: 40px;
+}
+
+.header-title {
   font-weight: bold;
-  font-size: 22px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 24px;
 }
 
 .header-icons {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
-.icon {
-  font-size: 16px;
+.header-icons i,
+.lang-select {
   cursor: pointer;
-  color: #333;
+  font-size: 16px;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  font-weight: bold;
+  cursor: pointer;
 }
